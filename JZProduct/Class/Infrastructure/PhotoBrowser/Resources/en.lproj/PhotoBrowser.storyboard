@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Browser View Controller-->
+        <scene sceneID="1XH-w9-D59">
+            <objects>
+                <viewController storyboardIdentifier="PhotoBrowserViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="48c-dX-RH2" customClass="PhotoBrowserViewController" customModule="Qingbnb" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mQw-bX-bRR"/>
+                        <viewControllerLayoutGuide type="bottom" id="aue-id-wBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7wQ-Ig-R5a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-4U-RnX">
+                                <rect key="frame" x="0.0" y="0.0" width="395" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="G6v-br-nP7">
+                                    <size key="itemSize" width="375" height="667"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="PhotoBrowserCell" reuseIdentifier="PhotoBrowserCell" id="XST-jx-uST" customClass="PhotoBrowserCell" customModule="Qingbnb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aG1-A4-VE6" customClass="ZoomImageView" customModule="Qingbnb" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="aG1-A4-VE6" firstAttribute="top" secondItem="XST-jx-uST" secondAttribute="top" id="IFx-0P-EHb"/>
+                                            <constraint firstItem="aG1-A4-VE6" firstAttribute="leading" secondItem="XST-jx-uST" secondAttribute="leading" id="Ris-e1-6db"/>
+                                            <constraint firstAttribute="bottom" secondItem="aG1-A4-VE6" secondAttribute="bottom" id="VDg-aM-A2R"/>
+                                            <constraint firstAttribute="trailing" secondItem="aG1-A4-VE6" secondAttribute="trailing" id="ua0-Fk-mn3"/>
+                                        </constraints>
+                                        <size key="customSize" width="375" height="667"/>
+                                        <connections>
+                                            <outlet property="zoomImageView" destination="aG1-A4-VE6" id="HYR-Mg-ndb"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="48c-dX-RH2" id="Exn-w3-FbO"/>
+                                    <outlet property="delegate" destination="48c-dX-RH2" id="wYv-tY-eUT"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBo-4D-2Tf" customClass="TopColorShadeView" customModule="Qingbnb" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="ULP-QV-vfh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zBo-4D-2Tf" secondAttribute="trailing" id="1JE-A1-VFf"/>
+                            <constraint firstAttribute="trailing" secondItem="K6X-4U-RnX" secondAttribute="trailing" constant="-20" id="1M4-1c-taD"/>
+                            <constraint firstItem="zBo-4D-2Tf" firstAttribute="leading" secondItem="7wQ-Ig-R5a" secondAttribute="leading" id="RYk-en-zlG"/>
+                            <constraint firstItem="K6X-4U-RnX" firstAttribute="top" secondItem="7wQ-Ig-R5a" secondAttribute="top" id="WmH-Dc-dzu"/>
+                            <constraint firstItem="K6X-4U-RnX" firstAttribute="leading" secondItem="7wQ-Ig-R5a" secondAttribute="leading" id="eS1-kV-BMr"/>
+                            <constraint firstItem="zBo-4D-2Tf" firstAttribute="top" secondItem="7wQ-Ig-R5a" secondAttribute="top" id="k4u-m2-bYD"/>
+                            <constraint firstAttribute="bottom" secondItem="K6X-4U-RnX" secondAttribute="bottom" id="wy1-mM-Spq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ka0-S4-Fs7"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="K6X-4U-RnX" id="Nve-JR-X2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8I-8g-8dD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="11.244377811094454"/>
+        </scene>
+    </scenes>
+</document>

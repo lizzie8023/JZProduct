@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "邮箱"; ObjectID = "7LX-E1-L6C"; */
+"7LX-E1-L6C.placeholder" = "邮箱";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "8zg-Rq-iWP"; */
+"8zg-Rq-iWP.placeholder" = "密码";
+
+/* Class = "UIButton"; normalTitle = "登 录"; ObjectID = "Dm1-zI-zSj"; */
+"Dm1-zI-zSj.normalTitle" = "登 录";
+
+/* Class = "UILabel"; text = "xxx@163.com"; ObjectID = "QNh-V3-vQw"; */
+"QNh-V3-vQw.text" = "xxx@163.com";
+
+/* Class = "UIButton"; normalTitle = "退出登录"; ObjectID = "Tr4-hL-FwZ"; */
+"Tr4-hL-FwZ.normalTitle" = "退出登录";
+
+/* Class = "UIButton"; normalTitle = "查看订单"; ObjectID = "gFx-a1-Of1"; */
+"gFx-a1-Of1.normalTitle" = "查看订单";

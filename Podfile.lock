@@ -1,0 +1,81 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Bugly (2.4.8)
+  - ConciseKit (0.1.2)
+  - Differentiator (3.0.1)
+  - JZSwiftWarpper (0.0.1):
+    - JZSwiftWarpper/Code (= 0.0.1)
+  - JZSwiftWarpper/Code (0.0.1)
+  - Kingfisher (4.1.1)
+  - KVOController (1.2.0)
+  - LGAlertView (2.4.0)
+  - MBProgressHUD (1.0.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.1):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (1.2.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.7.0):
+    - RxCocoa (>= 4.0.0-beta.0)
+    - RxSwift (>= 4.0.0-beta.0)
+  - RxSwift (4.0.0)
+  - SwiftyJSON (3.1.4)
+  - Toaster (2.1.0)
+  - XCGLogger (4.0.0):
+    - XCGLogger/Core (= 4.0.0)
+  - XCGLogger/Core (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5.1)
+  - Bugly
+  - ConciseKit (~> 0.1.2)
+  - JZSwiftWarpper (= 0.0.1)
+  - Kingfisher (~> 4.1.0)
+  - KVOController (~> 1.2.0)
+  - LGAlertView (from `https://github.com/xushao1990/LGAlertView.git`, commit `a6ce704`)
+  - MBProgressHUD (~> 1.0.0)
+  - RxCocoa (~> 4.0.0)
+  - RxDataSources (~> 3.0.0)
+  - RxGesture (~> 1.2.0)
+  - RxKeyboard
+  - RxSwift (~> 4.0.0)
+  - SwiftyJSON (~> 3.1.4)
+  - Toaster (~> 2.1.0)
+  - XCGLogger (~> 4.0.0)
+
+EXTERNAL SOURCES:
+  LGAlertView:
+    :commit: a6ce704
+    :git: https://github.com/xushao1990/LGAlertView.git
+
+CHECKOUT OPTIONS:
+  LGAlertView:
+    :commit: a6ce704
+    :git: https://github.com/xushao1990/LGAlertView.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  ConciseKit: 6eda679f3a18c050490e018eae2b497e656055ff
+  Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
+  JZSwiftWarpper: 041b5ada4e6dd3cad0dd777112de05780e48899d
+  Kingfisher: 6793a473357b5dbee42b0068ef203fe8325f259e
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  LGAlertView: 2f5e83dd5cc2537de57d98727650609e86197d1a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: 098b7e62b6316313b14d6bf594e3f4f4f62a238a
+  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
+  RxKeyboard: d7b65fd85347c2ec214d21c95537dadc62d3b9af
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Toaster: 8c3225dc465bef4aa57e147a288724576df8e439
+  XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
+
+PODFILE CHECKSUM: b9b4475f97c1252203a2233ee81cedae6eba5963
+
+COCOAPODS: 1.3.1
